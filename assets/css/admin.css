@@ -1,0 +1,34 @@
+.ff-bank-transfer-details {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.ff-bank-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.ff-bank-info li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.ff-qr-code {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ff-qr-code img {
+    max-width: 200px;
+    height: auto;
+}
+
+.ff-payment-instructions {
+    background: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 20px;
+}

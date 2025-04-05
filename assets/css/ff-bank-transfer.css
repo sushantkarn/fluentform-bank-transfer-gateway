@@ -1,0 +1,329 @@
+/* ============================================= */
+/* Bank Transfer Payment Method - Modern Styling */
+/* ============================================= */
+
+/* Main Container */
+.ff-bank-transfer-container {
+    margin: 25px 0;
+    padding: 25px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.ff-bank-transfer-container:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headings */
+.ff-bank-details h4,
+.ff-payment-instructions h4 {
+    color: #1f2937;
+    margin: 0 0 18px 0;
+    font-size: 1.2em;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.ff-bank-details h4::after,
+.ff-payment-instructions h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background: #3b82f6;
+    border-radius: 3px;
+}
+
+/* Bank Details List - Modern Card Style */
+.ff-bank-details-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #f9fafb;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+}
+
+.ff-bank-details-list li {
+    padding: 12px 16px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+    transition: background 0.2s ease;
+}
+
+.ff-bank-details-list li:last-child {
+    border-bottom: none;
+}
+
+.ff-bank-details-list li:hover {
+    background: #f3f4f6;
+}
+
+.ff-bank-details-list li strong {
+    min-width: 140px;
+    color: #4b5563;
+    font-weight: 500;
+    padding-right: 15px;
+}
+
+/* QR Code Styling - Modern Card */
+.ff-qr-code-wrapper {
+    text-align: center;
+    margin: 0 auto 25px;
+    max-width: 280px;
+    padding: 15px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ff-qr-code-wrapper:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.07);
+}
+
+.ff-qr-code-wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.ff-qr-code-help {
+    margin-top: 10px;
+    color: #6b7280;
+    font-size: 0.9em;
+}
+
+/* Instructions & Notes - Modern Callout */
+.ff-payment-instructions,
+.ff-payment-details {
+    margin: 25px 0;
+    padding: 18px 20px;
+    background: #f0f9ff;
+    border-left: 4px solid #3b82f6;
+    border-radius: 0 6px 6px 0;
+}
+
+.ff-payment-instructions .ff-instructions-content,
+.ff-payment-details > div {
+    color: #374151;
+    line-height: 1.6;
+}
+
+/* Form Elements - Modern Design */
+.ff-payment-note-field,
+.ff-receipt-upload,
+.ff-qr-upload {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid #f3f4f6;
+}
+
+.ff-payment-note-field label,
+.ff-receipt-upload label,
+.ff-qr-upload label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #374151;
+    font-size: 0.95em;
+}
+
+.ff-payment-note-field textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background: #f9fafb;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+.ff-receipt-upload input[type="file"],
+.ff-qr-upload input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px dashed #d1d5db;
+    border-radius: 6px;
+    background: #f9fafb;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* File Upload Hover/Focus States */
+.ff-receipt-upload input[type="file"]:hover,
+.ff-qr-upload input[type="file"]:hover {
+    background: #f3f4f6;
+    border-color: #9ca3af;
+}
+
+.ff-payment-note-field textarea:focus,
+.ff-receipt-upload input[type="file"]:focus,
+.ff-qr-upload input[type="file"]:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+    background: #ffffff;
+}
+
+/* File Preview Styling */
+.ff-file-preview {
+    margin-top: 12px;
+    padding: 10px;
+    background: #f9fafb;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+}
+
+.ff-file-preview img {
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.ff-file-preview small {
+    display: block;
+    color: #6b7280;
+    font-size: 0.85em;
+}
+
+/* Helper Text & Required Marker */
+.ff-help-text {
+    font-size: 0.85em;
+    color: #6b7280;
+    margin-top: 8px;
+    line-height: 1.4;
+}
+
+.ff-required {
+    color: #ef4444;
+    margin-left: 3px;
+}
+
+/* Error Messages */
+.ff-error {
+    color: #ef4444 !important;
+    font-size: 0.85em;
+    margin-top: 8px;
+    display: block;
+}
+
+/* Payment Details in Admin */
+.ff-payment-details {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8fafc;
+    border-radius: 6px;
+    border-left: 4px solid #3b82f6;
+}
+
+.ff-payment-details h4 {
+    margin-top: 0;
+    color: #1f2937;
+    font-size: 1.1em;
+}
+
+.ff-payment-details > div {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.ff-payment-details > div:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.ff-payment-details strong {
+    color: #4b5563;
+    display: inline-block;
+    min-width: 120px;
+}
+
+.ff-payment-details a {
+    color: #3b82f6;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.ff-payment-details a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ff-bank-transfer-container {
+        padding: 20px;
+        margin: 15px 0;
+    }
+    
+    .ff-bank-details-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 12px;
+    }
+    
+    .ff-bank-details-list li strong {
+        min-width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .ff-qr-code-wrapper {
+        max-width: 220px;
+        padding: 12px;
+    }
+    
+    .ff-payment-note-field,
+    .ff-receipt-upload,
+    .ff-qr-upload {
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+}
+
+/* Animation for QR Code Upload in Admin */
+.ff_qr_code_upload_wrapper {
+    transition: all 0.3s ease;
+}
+
+.ff_qr_code_preview {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.ff_qr_code_preview img {
+    transition: transform 0.3s ease;
+}
+
+.ff_qr_code_preview:hover img {
+    transform: scale(1.02);
+}
+
+/* Button Styles */
+.ff_upload_qr_code,
+.ff_remove_qr_code {
+    transition: all 0.2s ease;
+}
+
+.ff_upload_qr_code:hover,
+.ff_remove_qr_code:hover {
+    transform: translateY(-1px);
+}
