@@ -81,7 +81,7 @@ fluentform-bank-transfer-gateway/
 
 ## Support
 
-For support, visit [Flowrage](https://www.sushantkarn.com.np/).
+For support, visit [Sushant Karn](https://www.sushantkarn.com.np/).
 
 ## License
 
